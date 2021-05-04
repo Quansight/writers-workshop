@@ -3,15 +3,17 @@
 in _blast of publishing_, content is submitted with the intent of being accepted, the more reviews and feedback, the sooner it is publishing.
 this is a completely open source approach to managing content while mitigating futhercoming technical debts. 
 
+when we write together, we read together, and publish together. it is important to feedback to a work that you share attribution with.
+
 we aren't saying everything passes, we have standards!
 
-- [ ] the issue is triaged by an editor within the first __24 hours__
-  - [ ] issue is tagged
-  - [ ] reviewers assigned
-    - [ ] countdown begins  
-      - [x] review required
+1. [ ] the issue is triaged by an editor within the first __24 business hours__
+  1. [ ] issue is tagged
+  2. [ ] reviewers assigned
+    * [ ] countdown begins  
+      * [x] review required
         - [ ] restart countdown
-      - [ ] review required
-        - [ ]  close and accept
-  - [x] tests pass
-  - [x] there are sufficient reviews, or reactions
+    - [ ] review required after (xx days)
+      - [ ]  close and accept
+  3. [x] tests pass
+  4. [x] there are sufficient reviews, or reactions
