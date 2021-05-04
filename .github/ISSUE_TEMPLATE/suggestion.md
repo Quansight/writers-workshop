@@ -1,6 +1,6 @@
 ---
 name: suggest a topic you'd like to read about
-description: suggest a topic or prompt that you would read about. an important part of writing is writing for others. we will look to find an authors for your idea
+about: suggest a topic or prompt that you would read about. an important part of writing is writing for others. we will look to find an authors for your idea
 title: 💡 i want to read about ...
 labels: idea,
 assignees: 
