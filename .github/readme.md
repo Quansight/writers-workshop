@@ -10,7 +10,7 @@ we aren't saying everything passes, we have standards!
 1. 🥚 the issue is triaged by an editor within the first __24 business hours__
   1. 📛 issue is tagged
   2. 🧐 reviewers assigned
-  * ⏲️ countdown begins  
+  * ⏲️ countdown begins  7️⃣5️⃣3️⃣1️⃣
     * 🤔 review required
     * ♻️ restart countdown
   * 🏁 no review required after (xx days)
