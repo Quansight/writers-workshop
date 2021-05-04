@@ -3,7 +3,7 @@
 in _blast of publishing_, content is submitted with the intent of being accepted, the more reviews and feedback, the sooner it is publishing.
 this is a completely open source approach to managing content while mitigating futhercoming technical debts. 
 
-when we write together, we read together, and publish together. it is important to feedback to a work that you share attribution with.
+when we write together, we read together, and publish together. it is important to provide actionable feedback to works that you share attribution with.
 
 we aren't saying everything passes, we have standards!
 
