@@ -14,7 +14,7 @@ we aren't saying everything passes, we have standards!
   * ⏲️ countdown begins  7️⃣5️⃣3️⃣1️⃣
     * 🤔 review required
     * ♻️ restart countdown
-  * 🏁 no review required after (xx days)
+  * 🏁 no review required after (7️⃣5️⃣3️⃣1️⃣ days)
   * 🏆  close and accept
   4. 🟢 tests pass
   5. 🌝 there are sufficient reviews, or reactions
