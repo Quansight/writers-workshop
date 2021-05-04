@@ -5,6 +5,9 @@ title: 👀 i wrote about ...
 labels: post,
 assignees: 
 ---
+
+if you are unsure about how to submit content through a pull requests, please [create an issue instead](https://github.com/Quansight/writers-workshop/issues/new?template=work.md).
+
 # describe the topic you wrote about in tweet form using `#@` for attribution
 
 > i just published a program about an example that is fun because examples are fun. thanks to @example for the ✏️. #example 
