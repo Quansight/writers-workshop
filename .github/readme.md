@@ -12,7 +12,7 @@ we aren't saying everything passes, we have standards!
   2. 🧐 reviewers assigned
     * ⏲️ countdown begins  
       * 🤔 review required
-        * ♻️ restart countdown
+      * ♻️ restart countdown
     * 🏁 no review required after (xx days)
     * 🏆  close and accept
   3. 🟢 tests pass
