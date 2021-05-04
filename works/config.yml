@@ -1,0 +1,39 @@
+title: quansight writers workshop
+author: quansight
+copyright: '2021'
+logo: ''
+only_build_toc_files: true
+repository: {}
+execute:
+  execute_notebooks: off
+exclude_patterns:
+- _build/*
+- .nox/*
+html:
+  favico: ''
+  use_edit_page_button: false
+  use_repository_button: false
+  use_issues_button: false
+  extra_navbar: ''
+  extra_footer: ''
+  google_analytics_id: ''
+  home_page_in_navbar: true
+  baseurl: ''
+  comments:
+    hypothesis: false
+    utterances: false
+sphinx:
+  extra_extensions: []
+  local_extensions: {}
+  config: 
+    nb_render_priority:
+      html:
+      - "application/vnd.jupyter.widget-view+json"
+      - "application/javascript"
+      - "text/html"
+      - "image/svg+xml"
+      - "image/png"
+      - "image/jpeg"
+      - "text/markdown"
+      - "text/latex"
+      - "text/plain"
