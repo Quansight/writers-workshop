@@ -10,12 +10,10 @@ we aren't saying everything passes, we have standards!
 1. [ ] the issue is triaged by an editor within the first __24 business hours__
   1. [ ] issue is tagged
   2. [ ] reviewers assigned
-    
     1. [ ] countdown begins  
       2. [x] review required
         3. [ ] restart countdown
     99. [ ] no review required after (xx days)
     100. [ ]  close and accept
-     
   3. [x] tests pass
   4. [x] there are sufficient reviews, or reactions
