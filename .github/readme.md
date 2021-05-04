@@ -9,11 +9,12 @@ we aren't saying everything passes, we have standards!
 
 1. 🥚 the issue is triaged by an editor within the first __24 business hours__
   1. 📛 issue is tagged
-  2. 🧐 reviewers assigned
+  2. 🧐 reviewers manual assigned
+  3. ❓ reviewers assign themselves
   * ⏲️ countdown begins  7️⃣5️⃣3️⃣1️⃣
     * 🤔 review required
     * ♻️ restart countdown
   * 🏁 no review required after (xx days)
   * 🏆  close and accept
-  3. 🟢 tests pass
-  4. 🌝 there are sufficient reviews, or reactions
+  4. 🟢 tests pass
+  5. 🌝 there are sufficient reviews, or reactions
