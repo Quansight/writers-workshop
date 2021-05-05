@@ -28,7 +28,9 @@ jobs:
           ${{ env.CACHE_EPOCH }}-${{ runner.os }}-pip-build-${{ hashFiles('pyproject.toml') }}
         restore-keys: |
           ${{ env.CACHE_EPOCH }}-${{ runner.os }}-pip-build-
-
+    - name: Build HTML Docs
+      run: |
+        jb build . --toc qww/toc.yml --config qww/config.yml --builder html
     - name: Install latex dependencies
       run: |
         sudo apt-get -qq update
@@ -42,7 +44,8 @@ jobs:
           xindy
     - name: Build PDF from LaTeX (Docs)
       run: |
-        jb build . --toc qww/toc.yml --config qww/config.yml --builder pdflatex -n -W --keep-going
+        jb build . --toc qww/toc.yml --config qww/config.yml --builder pdflatex --keep-going
+        cp ./_build/latex/book.pdf ./_build/html
     - uses: actions/upload-artifact@v2
       with:
         name: PDF_LATEX
