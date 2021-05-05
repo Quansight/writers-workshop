@@ -42,7 +42,7 @@ jobs:
           xindy
     - name: Build PDF from LaTeX (Docs)
       run: |
-        jb build . --builder pdflatex -n -W --keep-going
+        jb build . --toc qww/toc.yml --config qww/config.yml --builder pdflatex -n -W --keep-going
     - uses: actions/upload-artifact@v2
       with:
         name: PDF_LATEX
