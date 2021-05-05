@@ -1,0 +1,55 @@
+name: pdf
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  CACHE_EPOCH: 1
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - run: |
+        python -m pip install --upgrade pip
+        pip install wheel jupyter-book[sphinx,pdflatex]
+
+    - uses: actions/cache@v2
+      with:
+        path: ~/.cache/pip
+        key: |
+          ${{ env.CACHE_EPOCH }}-${{ runner.os }}-pip-build-${{ hashFiles('pyproject.toml') }}
+        restore-keys: |
+          ${{ env.CACHE_EPOCH }}-${{ runner.os }}-pip-build-
+
+    - name: Install latex dependencies
+      run: |
+        sudo apt-get -qq update
+        sudo apt-get install -y     \
+          texlive-latex-recommended \
+          texlive-latex-extra       \
+          texlive-fonts-extra       \
+          fonts-freefont-otf        \
+          texlive-xetex             \
+          latexmk                   \
+          xindy
+    - name: Build PDF from LaTeX (Docs)
+      run: |
+        jb build docs --builder pdflatex -n -W --keep-going
+    - uses: actions/upload-artifact@v2
+      with:
+        name: PDF_LATEX
+        path: ./_build/latex/book.pdf
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@4.1.0
+      with:
+        branch: gh-pages
+        folder: ./_build/html

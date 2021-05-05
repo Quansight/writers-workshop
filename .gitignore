@@ -1,3 +1,4 @@
 .nox
 .doit.db*
 _build
+__pycache__

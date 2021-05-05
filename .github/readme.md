@@ -32,6 +32,8 @@ the outcome of this class is about our collective efforts. when we write togethe
 
 #### homework
 
+in this weeks homework we think about issues as literature. i want you all to pair up in groups and review each others works.
+
 
 ## how publishing works
 
