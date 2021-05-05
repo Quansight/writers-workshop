@@ -45,7 +45,7 @@ jobs:
     - name: Build PDF from LaTeX (Docs)
       run: |
         jb build . --toc qww/toc.yml --config qww/config.yml --builder pdflatex --keep-going
-        cp _build/pdflatex/python.pdf _build/html
+        cp _build/latex/python.pdf _build/html
     - uses: actions/upload-artifact@v2
       with:
         name: PDF_LATEX
