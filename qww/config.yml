@@ -9,6 +9,7 @@ execute:
 exclude_patterns:
 - _build/*
 - .nox/*
+- qriter/.nox/*
 html:
   favico: ''
   use_edit_page_button: false

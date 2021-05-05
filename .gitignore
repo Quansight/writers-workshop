@@ -2,3 +2,5 @@
 .doit.db*
 _build
 __pycache__
+.nox
+.doit.db*

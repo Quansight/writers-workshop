@@ -1,0 +1,11 @@
+name: pdf
+channels:
+- conda-forge
+- defaults
+dependencies:
+- python=3.8
+- texlive-core
+- pip
+- pip:
+  - jupyter-book[sphinx,pdflatex]
+  - bindep
