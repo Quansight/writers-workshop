@@ -45,14 +45,14 @@ jobs:
     - name: Build PDF from LaTeX (Docs)
       run: |
         jb build . --toc qww/toc.yml --config qww/config.yml --builder pdflatex --keep-going
-        cp ./_build/latex/book.pdf ./_build/html
+        cp _build/pdflatex/python.pdf _build/html
     - uses: actions/upload-artifact@v2
       with:
         name: PDF_LATEX
-        path: ./_build/latex/book.pdf
+        path: _build/latex/python.pdf
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.0
       with:
         branch: gh-pages
-        folder: ./_build/html
+        folder: _build/html
