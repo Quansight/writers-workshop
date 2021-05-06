@@ -1,0 +1,4 @@
+[submodule "qww/people/marsbarlee"]
+	path = qww/people/marsbarlee
+	url = https://github.com/MarsBarLee/writers-workshop
+	branch = fb4c46f597ebe69438b28d559516eb3ef31e3e62

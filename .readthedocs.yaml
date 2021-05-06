@@ -1,0 +1,8 @@
+version: 2
+
+python:
+  install: []
+sphinx:
+  configuration: conf.py
+submodules:
+  include: all  
