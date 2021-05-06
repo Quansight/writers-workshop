@@ -28,3 +28,4 @@ panels_add_bootstrap_css = False
 pygments_style = 'sphinx'
 
 master_doc="readme" 
+bibtex_bibfiles = []
