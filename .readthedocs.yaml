@@ -1,7 +1,9 @@
 version: 2
 
 python:
-  install: []
+  version: 3.8
+  install:
+  - requirements: requirements.txt
 sphinx:
   configuration: conf.py
 submodules:
