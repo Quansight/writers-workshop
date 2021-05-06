@@ -1,1 +1,2 @@
 jupyter-book[sphinx,pdflatex]
+sphinx_togglebutton
