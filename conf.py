@@ -26,3 +26,5 @@ nb_render_priority = {'html': ['application/vnd.jupyter.widget-view+json', 'appl
 numfig = True
 panels_add_bootstrap_css = False
 pygments_style = 'sphinx'
+
+master_doc="readme" 
