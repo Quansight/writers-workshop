@@ -1,6 +1,6 @@
 jupyter-book[sphinx,pdflatex]
 sphinx_togglebutton
 sphinx-sitemap
-nox
+doit
 jupyter-videochat
 jupyterlab-link-share

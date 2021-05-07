@@ -1,1 +1,1 @@
-nox -s docs -- pdf
+doit html pdf
