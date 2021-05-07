@@ -1,0 +1,20 @@
+{
+    "VideoChat": {
+      "room_prefix": "qs-qww-square-triangle-circle",
+      "rooms": [
+        {
+          "id": "qs-qww-square",
+          "displayName": "square 🟦 room"
+        },
+        {
+          "id": "qs-qww-triangle",
+          "displayName": "heart 💛 room"
+        },
+        {
+          "id": "qs-qww-circle",
+          "displayName": "circle 🔴 room"
+        }
+      ]
+    }
+  }
+  

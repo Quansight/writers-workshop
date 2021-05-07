@@ -2,3 +2,4 @@ jupyter-book[sphinx,pdflatex]
 sphinx_togglebutton
 sphinx-sitemap
 nox
+jupyter-videochat
