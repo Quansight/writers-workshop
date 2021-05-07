@@ -12,3 +12,19 @@ the cirriculum is designed for all open source participants, one can get by most
 ## grading
 
 we have a hippy grade system where you grade yourselves. the classes worked will be collected into a single document that represents the groups collective works. you will be able to measure yourselves collectively, and be wildly impressed with the outcomes.
+
+## how publishing works
+
+we aren't saying everything passes, we have standards!
+
+1. 🥚 the issue is triaged by an editor within the first __24 business hours__
+  1. 📛 issue is tagged
+  2. 🧐 reviewers manual assigned
+  * ⏲️ countdown begins  7️⃣5️⃣3️⃣1️⃣
+    * ❓ reviewers assign themselves
+    * 🤔 review required
+    * ♻️ restart countdown
+  * 🏁 no review required after 7️⃣5️⃣3️⃣1️⃣ days
+  * 🏆  close and accept
+  4. 🟢 tests pass
+  5. 🌝 there are sufficient reviews, or reactions
