@@ -14,3 +14,19 @@
 [submodule "qww/people/pearu"]
 	path = docs/people/pearu
 	url = https://github.com/Quansight/pearu-sandbox
+[submodule "docs/people/marsbarlee"]
+	path = docs/people/marsbarlee
+	url = https://github.com/MarsBarLee/writers-workshop
+	branch = MarsBarLee-submission
+[submodule "docs/people/pearu"]
+	path = docs/people/pearu
+	url = https://github.com/Quansight/pearu-sandbox
+[submodule "docs/people/pmeier"]
+	path = docs/people/pmeier
+	url = https://github.com/pmeier/writers-workshop
+[submodule "docs/documents/testing-nb"]
+	path = docs/documents/testing-nb
+	url = https://gist.github.com/tonyfast/430faaf87c6d3607d80ec29cc7049043
+[submodule "docs/documents/litcompprog"]
+	path = docs/documents/litcompprog
+	url = https://gist.github.com/tonyfast/a7b5df83f99fa6ff5d7fd025046484d0
