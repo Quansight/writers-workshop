@@ -1,1 +1,1 @@
-doit html pdf
+doit -v1000 html pdf
