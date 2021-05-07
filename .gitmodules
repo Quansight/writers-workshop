@@ -2,3 +2,6 @@
 	path = qww/people/marsbarlee
 	url = https://github.com/MarsBarLee/writers-workshop
 	branch = fb4c46f597ebe69438b28d559516eb3ef31e3e62
+[submodule "qww/documents/litprogcomp"]
+	path = qww/documents/litprogcomp
+	url = https://gist.github.com/tonyfast/a7b5df83f99fa6ff5d7fd025046484d0
