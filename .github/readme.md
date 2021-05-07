@@ -1,17 +1,15 @@
-# quansight writers workshop
+# github practices for the workshops
 
-the quansight writers workshop is a creative program focused on learning how to write literate programs. we will learn to strive for literary excellence in all of our works like blogs, white papers, code, and documentation. we'll supplement language and design with code to acheive interesting, eccentric stories.
+we've provided some github templates for [issues] and [pull requests][pulls] that should help contribute to the workshop.
+please submit a new template if you think one is missing.
 
-the cirriculum is designed for all open source participants, one can get by mostly on markdown language alone. we explore writing for ourselves, others, and, the hardest of all, ourselves.
+## how [discussions] work
 
-## syllabus and class notes
+we use [discussions] for open ended issues that don't close, for example classes and discussions
 
-* [Workshop III](https://github.com/Quansight/writers-workshop/discussions/3)
-* [Workshop II & I](https://hackmd.io/@quansight/BJNV7F4Lu)
+## how [submitting issues works][issues]
 
-## grading
-
-we have a hippy grade system where you grade yourselves. the classes worked will be collected into a single document that represents the groups collective works. you will be able to measure yourselves collectively, and be wildly impressed with the outcomes.
+we use [issues] for tasks that can be triaged and resolved eventually, (eg new ideas, publishing improvments, submitting a document)
 
 ## how publishing works
 
@@ -28,3 +26,7 @@ we aren't saying everything passes, we have standards!
   * 🏆  close and accept
   4. 🟢 tests pass
   5. 🌝 there are sufficient reviews, or reactions
+
+[discussions]: https://github.com/Quansight/writers-workshop/discussions
+[issues]: https://github.com/Quansight/writers-workshop/issues
+[pulls]: https://github.com/Quansight/writers-workshop/pulls
