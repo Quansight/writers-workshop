@@ -6,7 +6,7 @@ jb, tex = which("jb"), which("xelatex")
 docs = pathlib.Path("docs")
 people = docs / "people"
 mars = people / "marsbarlee"
-CONF = pathlib.Path("docs/conf.py")
+CONF = pathlib.Path("conf.py")
 prepare = "short config".split()
 
 
@@ -39,7 +39,7 @@ def task_html():
     """build the html version of the project"""
     return dict(
         actions=[
-            "sphinx-build -j 2 -c docs . _build/html",
+            "sphinx-build -j 2 . _build/html",
             "touch _build/html/.nojekyll"
         ],
         targets=["_build/html/index.html"], 
@@ -50,7 +50,7 @@ def task_pdf():
     """build the html version of the project"""
     return dict(
         actions=[
-            "sphinx-build -j 2 -c docs -b latex . _build/latex ",
+            "sphinx-build -j 2 -b latex . _build/latex ",
         ],
         targets=["_build/latex/python.pdf"], 
         task_dep=prepare + ["install_latex"]
@@ -83,7 +83,7 @@ docs/**/docs/readme.md _build/* __pycache__/* .nox/* **/.github **/.nox **.ipynb
     yield dict(
         name="translate jb to sphinx",
         actions=[
-            """jb config sphinx --toc docs/toc.yml --config docs/config.yml . > docs/conf.py""",
+            """jb config sphinx --toc docs/toc.yml --config docs/config.yml . > conf.py""",
             extra_config
         ],
         targets=["conf.py"],
