@@ -1,7 +1,16 @@
 import nox
 import shutil
+import os
 
-@nox.session(python="3.8", reuse_venv=True, venv_backend="conda")
+extra = dict(python=os.getenv("JUPYTERHUB_CLIENT_ID"))
+
+if extra["python"] is None:
+    extra.pop("python")
+else:
+    extra["python"] = False
+
+
+@nox.session(reuse_venv=True, venv_backend="conda", **extra)
 def docs(session):
     """build the documentation for the writers workshop"""
     session.install("doit")
