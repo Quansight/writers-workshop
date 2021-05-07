@@ -3,3 +3,4 @@ sphinx_togglebutton
 sphinx-sitemap
 nox
 jupyter-videochat
+jupyterlab-link-share
