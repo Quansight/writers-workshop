@@ -32,7 +32,7 @@ def task_install_latex():
 
             ],
             task_dep=["install_book"],
-            targets=[config_changed(jb)]
+            uptodte=[config_changed(str(jb))]
         )
 
 def task_html():
