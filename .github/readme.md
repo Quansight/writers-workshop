@@ -1,39 +1,19 @@
-# quansight writers workshop
+# github practices for the workshops
 
-the quansight writers workshop is a creative program focused on learning how to write literate programs. we will learn to strive for literary excellence in all of our works like blogs, white papers, code, and documentation. we'll supplement language and design with code to acheive interesting, eccentric stories.
+we've provided some github templates for [issues] and [pull requests][pulls] that should help contribute to the workshop.
+please submit a new template if you think one is missing.
 
-the cirriculum is designed for all open source participants, one can get by mostly on markdown language alone. we explore writing for ourselves, others, and, the hardest of all, ourselves.
+* [github](https://github.com/Quansight/writers-workshop)
+* [nbviewer](https://nbviewer.jupyter.org/github/Quansight/writers-workshop/tree/main/)
+* [binder](https://mybinder.org/v2/gh/Quansight/writers-workshop/HEAD?urlpath=lab)
 
-## grading
+## how [discussions] work
 
-we have a hippy grade system where you grade yourselves. the classes worked will be collected into a single document that represents the groups collective works. you will be able to measure yourselves collectively, and be wildly impressed with the outcomes.
+we use [discussions] for open ended issues that don't close, for example classes and discussions
 
-## syllabus
+## how [submitting issues works][issues]
 
-### week 1 -  the hardest class of all
-
-writing about you! in this class we talk about the value of the readme file in general. it is a canonical piece of coding literature at this point, eat me, drink me.
-
-homework - create your readme repository 
-
-### week 2 - reading and writing literature with code
-
-scientists, developers, and designers write in code STOP
-
-there are few best practices when language and code collide, but there are style choices. this class is about exploring styles of writing that work for you.
-
-#### homework
-
-write a short story involving some language and some code in markdown, rst or notebooks.
-
-### week 3 - peer review
-
-the outcome of this class is about our collective efforts. when we write together, we read together, and publish together. it is important to provide actionable feedback to works that you share attribution with.
-
-#### homework
-
-in this weeks homework we think about issues as literature. i want you all to pair up in groups and review each others works.
-
+we use [issues] for tasks that can be triaged and resolved eventually, (eg new ideas, publishing improvments, submitting a document)
 
 ## how publishing works
 
@@ -50,3 +30,7 @@ we aren't saying everything passes, we have standards!
   * 🏆  close and accept
   4. 🟢 tests pass
   5. 🌝 there are sufficient reviews, or reactions
+
+[discussions]: https://github.com/Quansight/writers-workshop/discussions
+[issues]: https://github.com/Quansight/writers-workshop/issues
+[pulls]: https://github.com/Quansight/writers-workshop/pulls
