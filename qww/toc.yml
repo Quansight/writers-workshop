@@ -2,12 +2,16 @@
   sections:  
   - file: qww/readme
     sections:
-    - file: .github/readme
+    - file: qww/short programs
+    - file: qww/readmes
+    - file: qww/technical essays
+  - file: qww/developer
+  - file: .github/readme
+    sections:
+    - file: .github/ISSUE_TEMPLATE/readme
       sections:
-      - file: .github/ISSUE_TEMPLATE/readme
-        sections:
-        - file: .github/ISSUE_TEMPLATE/suggestion
-        - file: .github/ISSUE_TEMPLATE/work
-      - file: .github/PULL_REQUEST_TEMPLATE/readme
-        sections:
-        - file: .github/PULL_REQUEST_TEMPLATE/post
+      - file: .github/ISSUE_TEMPLATE/suggestion
+      - file: .github/ISSUE_TEMPLATE/work
+    - file: .github/PULL_REQUEST_TEMPLATE/readme
+      sections:
+      - file: .github/PULL_REQUEST_TEMPLATE/post

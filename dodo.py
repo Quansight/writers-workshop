@@ -6,8 +6,8 @@ jb, tex = which("jb"), which("xelatex")
 qww = pathlib.Path("qww")
 people = qww / "people"
 mars = people / "marsbarlee"
-
-prepare = "short".split()
+CONF = pathlib.Path("conf.py")
+prepare = "short config".split()
 
 
 def task_install_book():
@@ -18,6 +18,7 @@ def task_install_book():
             actions=['pip install --rrequirements.txt'],
             targets=[config_changed(jb)]
         )
+
 def task_install_latex():
     """install the latex dependencies"""
     if not tex:
@@ -38,7 +39,7 @@ def task_html():
     """build the html version of the project"""
     return dict(
         actions=[
-            "jb build --toc qww/toc.yml --config qww/config.yml .",
+            "sphinx-build . _build/html",
             "touch _build/html/.nojekyll"
         ],
         targets=["_build/html/index.html"], 
@@ -49,7 +50,7 @@ def task_pdf():
     """build the html version of the project"""
     return dict(
         actions=[
-            "jb build --toc qww/toc.yml --config qww/config.yml --builder pdflatex .",
+            "sphinx-build -b latex . _build/latex ",
         ],
         targets=["_build/latex/python.pdf"], 
         task_dep=prepare + ["install_latex"]
@@ -64,13 +65,21 @@ def task_short():
     )
 
 
-def task_sphinx_conf():
+def task_config():
     def extra_config():
         with open("conf.py", "a") as f:
             f.write("""
 master_doc="readme" 
 bibtex_bibfiles = []
 """)
+        conf = CONF.read_text()
+        CONF.write_text("".join(
+            """exclude_patterns = '\
+qww/**/qww/readme.md _build/* __pycache__/* .nox/* **/.github **/.nox **.ipynb_checkpoints .DS_Store LICENSE Thumbs.db\
+'.split()
+""" if x.startswith("exclude_patterns") else x for x in conf.splitlines(True)
+        ))
+        
 
     yield dict(
         name="translate jb to sphinx",
@@ -79,5 +88,5 @@ bibtex_bibfiles = []
             extra_config
         ],
         targets=["conf.py"],
-        task_dep=prepare + ["install_book"]
+        task_dep=["install_book"]
     )

@@ -6,10 +6,7 @@ repository: {}
 execute:
   execute_notebooks: off
 only_build_toc_files: true
-exclude_patterns:
-- "_build/*"
-- ".nox/*"
-- "**/.github"
+exclude_patterns: []
 html:
   favico: ''
   use_edit_page_button: false
@@ -27,6 +24,9 @@ sphinx:
   extra_extensions: []
   local_extensions: {}
   config: 
+    html_baseurl: "https://quansight-writers-workshop.readthedocs.io/en/latest/"
+    extra_extensions: 
+    - sphinx_sitemap
     nb_render_priority:
       html:
       - "application/vnd.jupyter.widget-view+json"

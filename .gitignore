@@ -4,3 +4,5 @@ _build
 __pycache__
 .nox
 .doit.db*
+*-checkpoint.ipynb
+*-checkpoint.py
