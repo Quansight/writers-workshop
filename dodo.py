@@ -6,7 +6,7 @@ jb, tex = which("jb"), which("xelatex")
 qww = pathlib.Path("qww")
 people = qww / "people"
 mars = people / "marsbarlee"
-CONF = pathlib.Path("conf.py")
+CONF = pathlib.Path("docs/conf.py")
 prepare = "short config".split()
 
 
@@ -39,7 +39,7 @@ def task_html():
     """build the html version of the project"""
     return dict(
         actions=[
-            "sphinx-build . _build/html",
+            "sphinx-build -j 2 -c docs . _build/html",
             "touch _build/html/.nojekyll"
         ],
         targets=["_build/html/index.html"], 
@@ -50,7 +50,7 @@ def task_pdf():
     """build the html version of the project"""
     return dict(
         actions=[
-            "sphinx-build -b latex . _build/latex ",
+            "sphinx-build -j 2 -c docs -b latex . _build/latex ",
         ],
         targets=["_build/latex/python.pdf"], 
         task_dep=prepare + ["install_latex"]
@@ -58,7 +58,6 @@ def task_pdf():
 
 def task_short():
     """configure the content for the short stories"""
-    
     yield dict(
         name="init submodule",
         actions=["git submodule init"]
@@ -67,7 +66,7 @@ def task_short():
 
 def task_config():
     def extra_config():
-        with open("conf.py", "a") as f:
+        with open(CONF, "a") as f:
             f.write("""
 master_doc="readme" 
 bibtex_bibfiles = []
@@ -84,7 +83,7 @@ qww/**/qww/readme.md _build/* __pycache__/* .nox/* **/.github **/.nox **.ipynb_c
     yield dict(
         name="translate jb to sphinx",
         actions=[
-            """jb config sphinx --toc qww/toc.yml --config qww/config.yml . > conf.py""",
+            """jb config sphinx --toc qww/toc.yml --config qww/config.yml . > docs/conf.py""",
             extra_config
         ],
         targets=["conf.py"],

@@ -5,7 +5,7 @@
     - file: qww/short programs
     - file: qww/readmes
     - file: qww/technical essays
-  - file: qww/developer
+  - file: .github/developer
   - file: .github/readme
     sections:
     - file: .github/ISSUE_TEMPLATE/readme
