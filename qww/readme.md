@@ -1,1 +1,1 @@
-# issue templates
+# writings

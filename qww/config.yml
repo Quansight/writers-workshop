@@ -2,14 +2,14 @@ title: quansight writers workshop
 author: quansight
 copyright: '2021'
 logo: ''
-only_build_toc_files: true
 repository: {}
 execute:
   execute_notebooks: off
+only_build_toc_files: true
 exclude_patterns:
-- _build/*
-- .nox/*
-- qriter/.nox/*
+- "_build/*"
+- ".nox/*"
+- "**/.github"
 html:
   favico: ''
   use_edit_page_button: false

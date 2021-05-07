@@ -62,24 +62,22 @@ def task_short():
         name="init submodule",
         actions=["git submodule init"]
     )
-    def mvmars():
-        shutil.copyfile(
-            mars / "Writer's Workshop #3- This Little Piggy....ipynb",
-            "qww/short_programs/This Little Piggy.ipynb"
-            )
-
-    yield dict(
-        name="move documents",
-        actions=[
-            """cd qww/people/marsbarlee && git checkout fb4c46f597ebe69438b28d559516eb3ef31e3e62""",
-            mvmars
-        ]
-    )
 
 
 def task_sphinx_conf():
-    return dict(
-        actions=["""jb config sphinx --toc qww/toc.yml --config qww/config.yml . > conf.py"""],
+    def extra_config():
+        with open("conf.py", "a") as f:
+            f.write("""
+master_doc="readme" 
+bibtex_bibfiles = []
+""")
+
+    yield dict(
+        name="translate jb to sphinx",
+        actions=[
+            """jb config sphinx --toc qww/toc.yml --config qww/config.yml . > conf.py""",
+            extra_config
+        ],
         targets=["conf.py"],
         task_dep=prepare + ["install_book"]
     )

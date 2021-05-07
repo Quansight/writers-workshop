@@ -1,13 +1,20 @@
-"""sessions for running tasks to build docs and packages
-
-    nox -s docs
-"""
-import os
 import nox
 
-CI = "GITHUB_ACTION" in os.environ or "READTHEDOCS" in os.environ
+def maybe_install(module,  session):
+    try:
+        session.run(module)
+    except nox.command.CommandFailed as e:
+        session.install(module)
+    
 
-@nox.session(reuse_venv=True, python=False if CI else "3.8")
+@nox.session(python="3.8", reuse_venv=True, venv_backend="conda")
 def docs(session):
-    session.install(*"""-rqww/data/requirements-docs.txt --ignore-installed""".split())
-    session.run(*"""doit build_docs""".split())
+    maybe_install("doit", session)
+
+    session.run(
+        *(
+            "doit v1000 html"
+            + (" pdf" if "pdf" in session.posargs else "")
+        ).split()
+    )
+
