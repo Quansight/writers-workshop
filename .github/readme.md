@@ -3,6 +3,10 @@
 we've provided some github templates for [issues] and [pull requests][pulls] that should help contribute to the workshop.
 please submit a new template if you think one is missing.
 
+* [github](https://github.com/Quansight/writers-workshop)
+* [nbviewer](https://nbviewer.jupyter.org/github/Quansight/writers-workshop/tree/main/)
+* [binder](https://mybinder.org/v2/gh/Quansight/writers-workshop/HEAD?urlpath=lab)
+
 ## how [discussions] work
 
 we use [discussions] for open ended issues that don't close, for example classes and discussions
