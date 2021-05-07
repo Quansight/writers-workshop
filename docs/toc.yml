@@ -1,10 +1,10 @@
 - file: readme
   sections:  
-  - file: qww/readme
+  - file: docs/readme
     sections:
-    - file: qww/short programs
-    - file: qww/readmes
-    - file: qww/technical essays
+    - file: docs/short programs
+    - file: docs/readmes
+    - file: docs/technical essays
   - file: .github/developer
   - file: .github/readme
     sections:

@@ -3,8 +3,8 @@ import shutil, pathlib
 from doit.tools import *
 jb, tex = which("jb"), which("xelatex")
 
-qww = pathlib.Path("qww")
-people = qww / "people"
+docs = pathlib.Path("docs")
+people = docs / "people"
 mars = people / "marsbarlee"
 CONF = pathlib.Path("docs/conf.py")
 prepare = "short config".split()
@@ -74,7 +74,7 @@ bibtex_bibfiles = []
         conf = CONF.read_text()
         CONF.write_text("".join(
             """exclude_patterns = '\
-qww/**/qww/readme.md _build/* __pycache__/* .nox/* **/.github **/.nox **.ipynb_checkpoints .DS_Store LICENSE Thumbs.db\
+docs/**/docs/readme.md _build/* __pycache__/* .nox/* **/.github **/.nox **.ipynb_checkpoints .DS_Store LICENSE Thumbs.db\
 '.split()
 """ if x.startswith("exclude_patterns") else x for x in conf.splitlines(True)
         ))
@@ -83,7 +83,7 @@ qww/**/qww/readme.md _build/* __pycache__/* .nox/* **/.github **/.nox **.ipynb_c
     yield dict(
         name="translate jb to sphinx",
         actions=[
-            """jb config sphinx --toc qww/toc.yml --config qww/config.yml . > docs/conf.py""",
+            """jb config sphinx --toc docs/toc.yml --config docs/config.yml . > docs/conf.py""",
             extra_config
         ],
         targets=["conf.py"],

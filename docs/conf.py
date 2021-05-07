@@ -1,14 +1,14 @@
 author = 'quansight'
 comments_config = {'hypothesis': False, 'utterances': False}
 copyright = '2021'
-exclude_patterns = 'qww/**/qww/readme.md _build/* __pycache__/* .nox/* **/.github **/.nox **.ipynb_checkpoints .DS_Store LICENSE Thumbs.db'.split()
+exclude_patterns = 'docs/**/docs/readme.md _build/* __pycache__/* .nox/* **/.github **/.nox **.ipynb_checkpoints .DS_Store LICENSE Thumbs.db'.split()
 execution_allow_errors = False
 execution_excludepatterns = []
 execution_in_temp = False
 execution_timeout = 30
 extensions = ['sphinx_togglebutton', 'sphinx_copybutton', 'myst_nb', 'jupyter_book', 'sphinxcontrib.bibtex', 'sphinx_thebe', 'sphinx_comments', 'sphinx.ext.intersphinx', 'sphinx_panels', 'sphinx_book_theme']
 extra_extensions = ['sphinx_sitemap']
-globaltoc_path = 'qww/toc.yml'
+globaltoc_path = 'docs/toc.yml'
 html_add_permalinks = '¶'
 html_baseurl = 'https://quansight-writers-workshop.readthedocs.io/en/latest/'
 html_favicon = ''

@@ -1,16 +1,16 @@
 [submodule "qww/people/marsbarlee"]
-	path = qww/people/marsbarlee
+	path = docs/people/marsbarlee
 	url = https://github.com/MarsBarLee/writers-workshop
 	branch = fb4c46f597ebe69438b28d559516eb3ef31e3e62
 [submodule "qww/documents/litprogcomp"]
-	path = qww/documents/litprogcomp
+	path = docs/documents/litprogcomp
 	url = https://gist.github.com/tonyfast/a7b5df83f99fa6ff5d7fd025046484d0
 [submodule "qww/documents/testing-nb"]
-	path = qww/documents/testing-nb
+	path = docs/documents/testing-nb
 	url = https://gist.github.com/tonyfast/430faaf87c6d3607d80ec29cc7049043
 [submodule "qww/people/pmeier"]
-	path = qww/people/pmeier
+	path = docs/people/pmeier
 	url = https://github.com/pmeier/writers-workshop
 [submodule "qww/people/pearu"]
-	path = qww/people/pearu
+	path = docs/people/pearu
 	url = https://github.com/Quansight/pearu-sandbox
