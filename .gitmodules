@@ -5,3 +5,6 @@
 [submodule "qww/documents/litprogcomp"]
 	path = qww/documents/litprogcomp
 	url = https://gist.github.com/tonyfast/a7b5df83f99fa6ff5d7fd025046484d0
+[submodule "qww/documents/testing-nb"]
+	path = qww/documents/testing-nb
+	url = https://gist.github.com/tonyfast/430faaf87c6d3607d80ec29cc7049043

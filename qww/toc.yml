@@ -1,6 +1,5 @@
 - file: readme
   sections:  
-  - file: qww/short_programs
   - file: qww/readme
     sections:
     - file: .github/readme
