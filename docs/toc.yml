@@ -1,10 +1,6 @@
 - file: readme
   sections:  
   - file: docs/readme
-    sections:
-    - file: docs/short programs
-    - file: docs/readmes
-    - file: docs/technical essays
   - file: .github/developer
   - file: .github/readme
     sections:
