@@ -8,3 +8,9 @@
 [submodule "qww/documents/testing-nb"]
 	path = qww/documents/testing-nb
 	url = https://gist.github.com/tonyfast/430faaf87c6d3607d80ec29cc7049043
+[submodule "qww/people/pmeier"]
+	path = qww/people/pmeier
+	url = https://github.com/pmeier/writers-workshop
+[submodule "qww/people/pearu"]
+	path = qww/people/pearu
+	url = https://github.com/Quansight/pearu-sandbox
