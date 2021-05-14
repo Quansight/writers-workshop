@@ -30,3 +30,6 @@
 [submodule "docs/documents/litcompprog"]
 	path = docs/documents/litcompprog
 	url = https://gist.github.com/tonyfast/a7b5df83f99fa6ff5d7fd025046484d0
+[submodule "docs/people/pearu.github"]
+	path = docs/people/pearu.github
+	url = https://github.com/pearu/pearu.github.io

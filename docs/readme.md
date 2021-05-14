@@ -4,8 +4,9 @@
 
 ### our first short literate programs
 
-```{toctree} 
+```{toctree}
 :glob:
+/docs/people/pearu.github/what_is_array.md
 /docs/people/pmeier/literate-programming/pytest-in-notebooks.ipynb
 /docs/people/pearu/latex_in_markdown/basic_latex_template.md
 /docs/people/marsbarlee/writer-workshop-3-mars-lee.ipynb
